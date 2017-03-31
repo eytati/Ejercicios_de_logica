@@ -147,7 +147,14 @@ class Punto2_vector_de_enteros():
         print(self.recorre_vector_de_enteros_valor_del_medio()+'\n')
         print('-------------------------Vector completo----------------------------------------')
         print(self.impresion_de_vector_enteros())
+        print('-------------------------Imprimir sin el primero--------------------------------')
+        self.eliminar_primero()
+        print(self.impresion_de_vector_enteros())
 
+    def eliminar_primero(self):
+
+        self.vector_enteros[0] =''
+        return  self.vector_enteros
 
 a = Punto1_Vector_de_double()
 a.vector_double()
